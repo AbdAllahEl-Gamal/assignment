@@ -19,9 +19,6 @@ public class UserDetailsService {
     private FileService fileService;
 
     public UserDetails saveUser(UserDetails userDetails) {
-    	//fileService.saveFile(file, userId)
-    	//userDetails.setUserPhotoPath(null);
-    	//userDetails.setPassportPath(null);
         return userDetailsRepository.save(userDetails);
     }
     

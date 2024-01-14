@@ -57,9 +57,6 @@ public class UserDetailsController {
             @PathVariable Long userId,
             @RequestParam(required = false) String newMobileNumber,
             @RequestParam(required = false) String newEmail) {
-		System.out.println("Test");
-		System.out.println(newMobileNumber);
-		System.out.println(newEmail);
         UserDetails updatedUser = userDetailsService.updateUserDetails(userId, newMobileNumber, newEmail);
         return ResponseEntity.ok(updatedUser);
     }
